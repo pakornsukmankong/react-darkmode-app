@@ -21,7 +21,7 @@ header,main {
 main {
   align-items: center;
   text-align: center;
-  padding-bottom: 10rem;
+  padding-bottom: 100rem;
 }
 
 main h1 {
@@ -72,4 +72,17 @@ main.dark p {
 footer div.dark {
   color: #121213;
   background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  main,header {
+    font-size: 1.5rem;
+    flex-direction: column;
+  }
+  main h1{
+    font-size: 2.5rem;
+  }
+  main img {
+    width: 100%;
+  }
 }
